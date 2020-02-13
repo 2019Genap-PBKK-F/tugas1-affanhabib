@@ -2,7 +2,7 @@
   <div>
     <div id="app" ref="spreadsheet"></div>
     <!-- <div><input type="button" value="Add new row" @click="() => spreadsheet.insertRow()" /></div> -->
-    <div><b-button variant="danger" @click="() => spreadsheet.insertRow()">Add new row</b-button></div>
+    <div><button class="btn btn-primary" @click="() => spreadsheet.insertRow()">Add new row</button></div>
   </div>
 </template>
 
