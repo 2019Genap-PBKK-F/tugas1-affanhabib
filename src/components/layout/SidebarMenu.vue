@@ -21,6 +21,37 @@
         <span class="page">JExcel</span>
       </a>
     </router-link>
+    <li class="treeview">
+      <a href="#">
+        <i class="fa fa-folder-o"></i>
+        <span class="treeview-title">Tugas</span>
+        <span class="pull-right-container pull-right">
+          <i class="fa fa-angle-left fa-fw"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a href="/datadasar">
+            <i class="fa fa-address-book-o"></i> Data Dasar
+          </a>
+        </li>
+        <li>
+          <a href="/capaianunit">
+            <i class="fa fa-address-book-o"></i> Capaian Unit
+          </a>
+        </li>
+        <li>
+          <a href="/unit">
+            <i class="fa fa-address-book-o"></i> Unit
+          </a>
+        </li>
+        <li>
+          <a href="/kategoriunit">
+            <i class="fa fa-address-book-o"></i> Kategori Unit
+          </a>
+        </li>
+      </ul>
+    </li>
     <router-link tag="li" class="pageLink" to="/tasks">
       <a>
         <i class="fa fa-tasks"></i>
