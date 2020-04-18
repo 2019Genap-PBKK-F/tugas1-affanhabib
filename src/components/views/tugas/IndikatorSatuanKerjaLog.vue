@@ -1,10 +1,10 @@
 <template>
   <div>
     <div id="app" ref="spreadsheet"></div>
-    <div>
+    <!-- <div>
         <input class="btn btn-primary tambah" type="button" value="Add New Row" @click="() => spreadsheet.insertRow()" />
         <input class="btn btn-primary tambah" type="button" value="Delete Selected Row" @click="() => spreadsheet.deleteRow()" />
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -44,17 +44,17 @@ export default {
         var jexcelOptions = {
           data: res.data,
           allowToolbar: true,
-          onchange: this.updateRow,
-          oninsertrow: this.newRow,
-          ondeleterow: this.deleteRow,
+          // onchange: this.updateRow,
+          // oninsertrow: this.newRow,
+          // ondeleterow: this.deleteRow,
           responsive: true,
           columns: [
-            { type: 'dropdown', title: 'Periode', url: dropdownPeriode, width: '120px' },
-            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '120px' },
-            { type: 'dropdown', title: 'Satker', url: dropdownSatuanKerja, width: '120px' },
-            { type: 'text', title: 'Bobot', width: '120px' },
-            { type: 'text', title: 'Target', width: '120px' },
-            { type: 'text', title: 'Capaian', width: '120px' },
+            { type: 'dropdown', title: 'Periode', url: dropdownPeriode, width: '120px', readOnly: true },
+            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '120px', readOnly: true },
+            { type: 'dropdown', title: 'Satker', url: dropdownSatuanKerja, width: '120px', readOnly: true },
+            { type: 'text', title: 'Bobot', width: '120px', readOnly: true },
+            { type: 'text', title: 'Target', width: '120px', readOnly: true },
+            { type: 'text', title: 'Capaian', width: '120px', readOnly: true },
             { type: 'text', title: 'Last Update', width: '120px', readOnly: true }
           ]
         }

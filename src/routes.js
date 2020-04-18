@@ -22,6 +22,8 @@ import PeriodeView from './components/views/tugas/Periode.vue'
 import MasterIndikatorView from './components/views/tugas/MasterIndikator.vue'
 import IndikatorPeriodeView from './components/views/tugas/IndikatorPeriode.vue'
 import SatuanKerjaView from './components/views/tugas/SatuanKerja.vue'
+import IndikatorSatkerView from './components/views/tugas/IndikatorSatuanKerja.vue'
+import IndikatorSatkerLogView from './components/views/tugas/IndikatorSatuanKerjaLog.vue'
 
 // Routes
 const routes = [
@@ -119,6 +121,16 @@ const routes = [
         component: SatuanKerjaView,
         name: 'SatuanKerja',
         meta: {description: 'List of Satuan Kerja'}
+      }, {
+        path: 'indikatorsatker',
+        component: IndikatorSatkerView,
+        name: 'IndikatorSatker',
+        meta: {description: 'List of Indikator Satuan Kerja'}
+      }, {
+        path: 'indikatorsatkerlog',
+        component: IndikatorSatkerLogView,
+        name: 'IndikatorSatkerLog',
+        meta: {description: 'List of Indikator Satuan Kerja Log'}
       }
     ]
   }, {

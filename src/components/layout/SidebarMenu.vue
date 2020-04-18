@@ -70,6 +70,11 @@
             <i class="fa fa-address-book-o"></i> Indikator Satker
           </a>
         </li>
+        <li>
+          <a href="/indikatorsatkerlog">
+            <i class="fa fa-address-book-o"></i> Indikator Satker Log
+          </a>
+        </li>
       </ul>
     </li>
     <router-link tag="li" class="pageLink" to="/tasks">
