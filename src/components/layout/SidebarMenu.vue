@@ -36,18 +36,38 @@
           </a>
         </li>
         <li>
+          <a href="/jenissatker">
+            <i class="fa fa-address-book-o"></i> Jenis Satker
+          </a>
+        </li>
+        <li>
+          <a href="/periode">
+            <i class="fa fa-address-book-o"></i> Periode
+          </a>
+        </li>
+        <li>
+          <a href="/masterindikator">
+            <i class="fa fa-address-book-o"></i> Master Indikator
+          </a>
+        </li>
+        <li>
+          <a href="/indikatorperiode">
+            <i class="fa fa-address-book-o"></i> Indikator Periode
+          </a>
+        </li>
+        <li>
+          <a href="/satuankerja">
+            <i class="fa fa-address-book-o"></i> Satuan Kerja
+          </a>
+        </li>
+        <li>
           <a href="/capaianunit">
             <i class="fa fa-address-book-o"></i> Capaian Unit
           </a>
         </li>
         <li>
-          <a href="/unit">
-            <i class="fa fa-address-book-o"></i> Unit
-          </a>
-        </li>
-        <li>
-          <a href="/kategoriunit">
-            <i class="fa fa-address-book-o"></i> Kategori Unit
+          <a href="/indikatorsatker">
+            <i class="fa fa-address-book-o"></i> Indikator Satker
           </a>
         </li>
       </ul>
