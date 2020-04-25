@@ -36,6 +36,11 @@
           </a>
         </li>
         <li>
+          <a href="/aspek">
+            <i class="fa fa-address-book-o"></i> Aspek
+          </a>
+        </li>
+        <li>
           <a href="/jenissatker">
             <i class="fa fa-address-book-o"></i> Jenis Satker
           </a>

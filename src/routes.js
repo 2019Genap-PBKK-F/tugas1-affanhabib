@@ -24,6 +24,7 @@ import IndikatorPeriodeView from './components/views/tugas/IndikatorPeriode.vue'
 import SatuanKerjaView from './components/views/tugas/SatuanKerja.vue'
 import IndikatorSatkerView from './components/views/tugas/IndikatorSatuanKerja.vue'
 import IndikatorSatkerLogView from './components/views/tugas/IndikatorSatuanKerjaLog.vue'
+import AspekView from './components/views/tugas/Aspek.vue'
 
 // Routes
 const routes = [
@@ -131,6 +132,11 @@ const routes = [
         component: IndikatorSatkerLogView,
         name: 'IndikatorSatkerLog',
         meta: {description: 'List of Indikator Satuan Kerja Log'}
+      }, {
+        path: 'aspek',
+        component: AspekView,
+        name: 'Aspek',
+        meta: {description: 'List of Aspek'}
       }
     ]
   }, {
