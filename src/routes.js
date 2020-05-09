@@ -26,6 +26,11 @@ import IndikatorSatkerView from './components/views/tugas/IndikatorSatuanKerja.v
 import IndikatorSatkerLogView from './components/views/tugas/IndikatorSatuanKerjaLog.vue'
 import AspekView from './components/views/tugas/Aspek.vue'
 
+import AbmasView from './components/views/fp/abmas.vue'
+import DosenView from './components/views/fp/dosen.vue'
+import PenelitianView from './components/views/fp/penelitian.vue'
+import publikasiView from './components/views/fp/publikasi.vue'
+
 // Routes
 const routes = [
   {
@@ -137,6 +142,26 @@ const routes = [
         component: AspekView,
         name: 'Aspek',
         meta: {description: 'List of Aspek'}
+      }, {
+        path: 'abmas',
+        component: AbmasView,
+        name: 'Abmas',
+        meta: {description: 'List of Abmas'}
+      }, {
+        path: 'dosen',
+        component: DosenView,
+        name: 'Dosen',
+        meta: {description: 'List of Dosen'}
+      }, {
+        path: 'penelitian',
+        component: PenelitianView,
+        name: 'Penelitian',
+        meta: {description: 'List of Penelitian'}
+      }, {
+        path: 'publikasi',
+        component: PublikasiView,
+        name: 'Publikasi',
+        meta: {description: 'List of Publikasi'}
       }
     ]
   }, {

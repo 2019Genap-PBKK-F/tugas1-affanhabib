@@ -42,7 +42,7 @@ export default {
           responsive: true,
           columns: [
             { type: 'hidden', title: 'id', width: '10px' },
-            { type: 'text', title: 'Nama', width: '120px' },
+            { type: 'text', title: 'Nama', width: '175px' },
             { type: 'text', title: 'Create Date', width: '200px', readOnly: true },
             { type: 'text', title: 'Last Update', width: '200px', readOnly: true },
             { type: 'text', title: 'Expired Date', width: '200px' }

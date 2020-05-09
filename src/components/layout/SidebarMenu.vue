@@ -82,6 +82,37 @@
         </li>
       </ul>
     </li>
+    <li class="treeview">
+      <a href="#">
+        <i class="fa fa-folder-o"></i>
+        <span class="treeview-title">Final Project</span>
+        <span class="pull-right-container pull-right">
+          <i class="fa fa-angle-left fa-fw"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a href="/abmas">
+            <i class="fa fa-file-word-o"></i> Abmas
+          </a>
+        </li>
+        <li>
+          <a href="/dosen">
+            <i class="fa fa-file-picture-o"></i> Dosen
+          </a>
+        </li>
+        <li>
+          <a href="/penelitian">
+            <i class="fa fa-file-pdf-o"></i> Penelitian
+          </a>
+        </li>
+        <li>
+          <a href="/publikasi">
+            <i class="fa fa-file-pdf-o"></i> Publikasi
+          </a>
+        </li>
+      </ul>
+    </li>
     <router-link tag="li" class="pageLink" to="/tasks">
       <a>
         <i class="fa fa-tasks"></i>

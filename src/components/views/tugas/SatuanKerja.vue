@@ -68,13 +68,18 @@ export default {
     updateRow(instance, cell, columns, row, value) {
       axios.get(host + 'api/satuan-kerja/').then(res => {
         var index = Object.values(res.data[row])
+        var old = Object.values(res.data[row])
         index[columns] = value
-        console.log(index)
-        axios.put(host + 'api/satuan-kerja/' + index[0], {
+        console.log(old[0])
+        console.log(index[0])
+        axios.put(host + 'api/satuan-kerja/' + old[0], {
           id: index[0],
           id_jns_satker: index[1],
           id_induk_satker: index[2],
-          nama: index[3]
+          nama: index[3],
+          create_date: index[4],
+          last_update: index[5],
+          expired_date: index[6]
         }).then(res => {
           console.log(res.data)
         })
