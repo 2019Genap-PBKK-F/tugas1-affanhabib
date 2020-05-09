@@ -61,7 +61,7 @@ export default {
         },
         options: {
           grid: {
-            title: 'Dosen',
+            title: 'Publikasi',
             type: 'flat',
             showTotals: 'off',
             showGrandTotals: 'off'

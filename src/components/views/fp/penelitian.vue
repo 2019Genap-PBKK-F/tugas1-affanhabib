@@ -61,7 +61,7 @@ export default {
         },
         options: {
           grid: {
-            title: 'Dosen',
+            title: 'Penelitian',
             type: 'flat',
             showTotals: 'off',
             showGrandTotals: 'off'

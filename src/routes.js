@@ -29,7 +29,7 @@ import AspekView from './components/views/tugas/Aspek.vue'
 import AbmasView from './components/views/fp/abmas.vue'
 import DosenView from './components/views/fp/dosen.vue'
 import PenelitianView from './components/views/fp/penelitian.vue'
-import publikasiView from './components/views/fp/publikasi.vue'
+import PublikasiView from './components/views/fp/publikasi.vue'
 
 // Routes
 const routes = [
