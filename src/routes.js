@@ -31,6 +31,8 @@ import DosenView from './components/views/fp/dosen.vue'
 import PenelitianView from './components/views/fp/penelitian.vue'
 import PublikasiView from './components/views/fp/publikasi.vue'
 
+import KonkinView from './components/views/fp/konkin.vue'
+
 // Routes
 const routes = [
   {
@@ -162,6 +164,10 @@ const routes = [
         component: PublikasiView,
         name: 'Publikasi',
         meta: {description: 'List of Publikasi'}
+      }, {
+        path: 'konkin',
+        component: KonkinView,
+        name: 'Kontrak Kerja Tahun 2020'
       }
     ]
   }, {

@@ -13,21 +13,21 @@ import jexcel from 'jexcel'
 import 'jexcel/dist/jexcel.css'
 import axios from 'axios'
 
-// var host = 'http://10.199.14.46:8018/'
-var host = 'http://localhost:8010/'
-var dropdownSatuanKerja = 'http://localhost:8010/api/satuan-kerja/nama/'
-var dropdownMasterIndikator = 'http://localhost:8010/api/master-indikator/nama/'
-var dropdownPeriode = 'http://localhost:8010/api/periode/nama/'
+var host = 'http://10.199.14.46:8018/'
+// var host = 'http://localhost:8010/'
+var dropdownSatuanKerja = host + 'api/satuan-kerja/nama/'
+var dropdownMasterIndikator = host + 'api/master-indikator/nama/'
+var dropdownPeriode = host + 'api/periode/nama/'
 
 export default {
   // name: 'App',
   data() {
     return {
-      masterIndikator: [],
+      indikatorSatker: [],
       form: {
         id_periode: 2020,
-        id_master: 1,
-        id_satker: 'aff',
+        id_master: 19,
+        id_satker: 'cek',
         bobot: 0.0,
         target: 0.0,
         capaian: 0.0
@@ -50,11 +50,11 @@ export default {
           responsive: true,
           columns: [
             { type: 'dropdown', title: 'Periode', url: dropdownPeriode, width: '120px' },
-            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '120px' },
-            { type: 'dropdown', title: 'Satker', url: dropdownSatuanKerja, width: '120px' },
-            { type: 'text', title: 'Bobot', width: '120px' },
-            { type: 'text', title: 'Target', width: '120px' },
-            { type: 'text', title: 'Capaian', width: '120px' },
+            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '300px' },
+            { type: 'dropdown', title: 'Satker', url: dropdownSatuanKerja, width: '300px' },
+            { type: 'text', title: 'Bobot', width: '75px' },
+            { type: 'text', title: 'Target', width: '75px' },
+            { type: 'text', title: 'Capaian', width: '75px' },
             { type: 'text', title: 'Last Update', width: '120px', readOnly: true }
           ]
         }
@@ -70,15 +70,19 @@ export default {
     updateRow(instance, cell, columns, row, value) {
       axios.get(host + 'api/indikator-satuan-kerja/').then(res => {
         var index = Object.values(res.data[row])
+        var old = Object.values(res.data[row])
         index[columns] = value
-        console.log(index)
-        axios.put(host + 'api/indikator-satuan-kerja/' + index[0] + '&' + index[1] + '&' + index[2], {
+        // console.log(index)
+        console.log(old[0] + ' ' + old[1] + ' ' + old[2])
+        console.log(index[0] + ' ' + index[1] + ' ' + index[2])
+        axios.put(host + 'api/indikator-satuan-kerja/' + old[0] + '&' + old[1] + '&' + old[2], {
           id_periode: index[0],
           id_master: index[1],
           id_satker: index[2],
           bobot: index[3],
           target: index[4],
-          capaian: index[5]
+          capaian: index[5],
+          last_update: index[6]
         }).then(res => {
           console.log(res.data)
         })

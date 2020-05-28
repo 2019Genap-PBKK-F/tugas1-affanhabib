@@ -13,10 +13,10 @@ import jexcel from 'jexcel'
 import 'jexcel/dist/jexcel.css'
 import axios from 'axios'
 
-// var host = 'http://10.199.14.46:8018/'
-var host = 'http://localhost:8010/'
-var dropdownMasterIndikator = 'http://localhost:8010/api/master-indikator/nama/'
-var dropdownPeriode = 'http://localhost:8010/api/periode/nama/'
+var host = 'http://10.199.14.46:8018/'
+// var host = 'http://localhost:8010/'
+var dropdownMasterIndikator = host + 'api/master-indikator/nama/'
+var dropdownPeriode = host + 'api/periode/nama/'
 
 export default {
   // name: 'App',
@@ -24,7 +24,7 @@ export default {
     return {
       masterIndikator: [],
       form: {
-        id_master: 1,
+        id_master: 81,
         id_periode: 2020,
         bobot: 0.0
       }
@@ -45,7 +45,7 @@ export default {
           ondeleterow: this.deleteRow,
           responsive: true,
           columns: [
-            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '120px' },
+            { type: 'dropdown', title: 'Master Indikator', url: dropdownMasterIndikator, width: '750px' },
             { type: 'dropdown', title: 'Periode', url: dropdownPeriode, width: '120px' },
             { type: 'text', title: 'Bobot', width: '120px' }
           ]

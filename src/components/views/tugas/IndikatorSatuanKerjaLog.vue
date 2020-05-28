@@ -13,11 +13,11 @@ import jexcel from 'jexcel'
 import 'jexcel/dist/jexcel.css'
 import axios from 'axios'
 
-// var host = 'http://10.199.14.46:8018/'
-var host = 'http://localhost:8010/'
-var dropdownSatuanKerja = 'http://localhost:8010/api/satuan-kerja/nama/'
-var dropdownMasterIndikator = 'http://localhost:8010/api/master-indikator/nama/'
-var dropdownPeriode = 'http://localhost:8010/api/periode/nama/'
+var host = 'http://10.199.14.46:8018/'
+// var host = 'http://localhost:8010/'
+var dropdownSatuanKerja = host +'api/satuan-kerja/nama/'
+var dropdownMasterIndikator = host + 'api/master-indikator/nama/'
+var dropdownPeriode = host + 'api/periode/nama/'
 
 export default {
   // name: 'App',

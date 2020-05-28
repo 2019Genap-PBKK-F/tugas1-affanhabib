@@ -13,10 +13,10 @@ import jexcel from 'jexcel'
 import 'jexcel/dist/jexcel.css'
 import axios from 'axios'
 
-// var host = 'http://10.199.14.46:8018/'
-var host = 'http://localhost:8010/'
-var dropdownJenisSatker = 'http://localhost:8010/api/jenis-satker/nama/'
-var dropdownSatuanKerja = 'http://localhost:8010/api/satuan-kerja/nama/'
+var host = 'http://10.199.14.46:8018/'
+// var host = 'http://localhost:8010/'
+var dropdownJenisSatker = host + 'api/jenis-satker/nama/'
+var dropdownSatuanKerja = host + 'api/satuan-kerja/nama/'
 
 export default {
   // name: 'App',
@@ -47,10 +47,10 @@ export default {
           responsive: true,
           columns: [
             { type: 'text', title: 'id', width: '75px' },
-            { type: 'dropdown', title: 'Jenis Satker', url: dropdownJenisSatker, width: '120px' },
-            { type: 'dropdown', title: 'Induk Satker', url: dropdownSatuanKerja, width: '75px' },
-            { type: 'text', title: 'Nama', width: '120px' },
-            { type: 'text', title: 'Email', width: '120px' },
+            { type: 'dropdown', title: 'Jenis Satker', url: dropdownJenisSatker, width: '150px' },
+            { type: 'dropdown', title: 'Induk Satker', url: dropdownSatuanKerja, width: '150px' },
+            { type: 'text', title: 'Nama', width: '150px' },
+            { type: 'text', title: 'Email', width: '50px' },
             { type: 'text', title: 'Create Date', width: '160px', readOnly: true },
             { type: 'text', title: 'Last Update', width: '160px', readOnly: true },
             { type: 'text', title: 'Expired Date', width: '160px' }
@@ -77,9 +77,10 @@ export default {
           id_jns_satker: index[1],
           id_induk_satker: index[2],
           nama: index[3],
-          create_date: index[4],
-          last_update: index[5],
-          expired_date: index[6]
+          email: index[4],
+          create_date: index[5],
+          last_update: index[6],
+          expired_date: index[7]
         }).then(res => {
           console.log(res.data)
         })

@@ -57,7 +57,8 @@ export default {
       report: {
         dataSource: {
           dataSourceType: 'json',
-          filename: 'http://localhost:8010/api/publikasi'
+          // filename: 'http://localhost:8010/api/publikasi'
+          filename: 'http://10.199.14.46:8018/api/publikasi'
         },
         options: {
           grid: {

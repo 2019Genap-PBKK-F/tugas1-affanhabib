@@ -57,7 +57,8 @@ export default {
       report: {
         dataSource: {
           dataSourceType: 'json',
-          filename: 'http://localhost:8010/api/penelitian'
+          // filename: 'http://localhost:8010/api/penelitian'
+          filename: 'http://10.199.14.46:8018/api/penelitian'
         },
         options: {
           grid: {

@@ -111,6 +111,11 @@
             <i class="fa fa-file-pdf-o"></i> Publikasi
           </a>
         </li>
+        <li>
+          <a href="/konkin">
+            <i class="fa fa-file-pdf-o"></i> Kontrak Kerja
+          </a>
+        </li>
       </ul>
     </li>
     <router-link tag="li" class="pageLink" to="/tasks">
